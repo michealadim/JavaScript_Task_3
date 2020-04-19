@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> New </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+	<script>
+		  function myNumbers (interger)  {
+        var array = [];
+         var value = "";
+         for ( let num = 1; num <= interger; num++) {
+          
+           if (num % 2===0 && num % 3===0 && num % 5===0) {
+            value ="yu-gi-oh"; 
+            }
+         else if  (num % 3===0 && num % 5===0) {
+            value = "gi-oh";
+         }  
+        else if (num % 2===0 && num % 5===0) {
+            value = "yu-oh";
+         }
+            else if (num % 2===0 && num % 3===0) {
+            value = "yu-gi";
+         }
+        else  if (num % 5===0) {
+            value = "oh";
+         }
+         else if (num % 3===0) {
+            value ="gi";
+         }
+         else if (num % 2===0) {
+                value = "yu";
+         }
+         else {
+         	value = num;
+         }
+         console.log(num);
+    array.push (value);
+        }
+        return array;
+        }
+
+                    console.log(myNumbers(100));
+		
+	</script>
+</body>
+</html>
